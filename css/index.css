@@ -1,5 +1,5 @@
 body{
-    background: rgb(0, 0, 0);
+    background-image: url(../multimedia/fondos/fondo-lineas-verdes.webp);
 }
 .barrasuperior{
     background: rgb(0, 0, 0);
@@ -25,7 +25,7 @@ body{
 
 }
 
-.desplegable-btn, .imagen-barra-desplegable{
+.desplegable-btn{
     display: none;
     color:rgb(10, 245, 10);
     background: black;
@@ -65,7 +65,7 @@ body{
 }
 
 .imagen-presentacion{
-    width: 30%;
+    width: 20vh;
     padding: 20px;
 
 }
@@ -83,12 +83,14 @@ body{
 .contenidouno{
     color:aliceblue;
     width: 100%;
+    margin-top: 50px;
+
 
 }
 
-/* .title-ContenidoUno{
-    box-shadow: 5px 5px 10px rgb(4, 252, 4);
-} */
+.title-ContenidoUno{
+    text-align: center;
+}
 
 .caracteristicas-producto{
     color: aliceblue;
@@ -101,7 +103,7 @@ body{
 }
 
 .caracteristicas-producto img{
-    width: 30%;
+    width: 30vh;
 }
 @media (max-width: 700px) { 
     .desplegable{
@@ -131,12 +133,6 @@ body{
 
     }
 
-    .imagen-barra-desplegable{
-        display: block;
-        width: 30%;
-        position: absolute;
-        right: 10px;
-    }
         
     .desplegable-content.active {
         display: block;
@@ -146,5 +142,13 @@ body{
         background-size:100vh;
         background-repeat: no-repeat;
 
+    }
+
+    .caracteristicas-producto{
+        font-size: 96%;
+    }
+
+    .caracteristicas-producto img{
+        width: 20vh;
     }
 }
