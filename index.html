@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animaciones.css"">
+    <title>JCP</title>
+</head>
+<body>
+    <head>
+        <section class="barrasuperior">
+                <img class="LoGO" src="./multimedia/iconos/JCP.png" alt="Imagen JCP del logo">
+
+            <div class="desplegable">
+                <button class="desplegable-btn">&#9776</button>
+                <div class="desplegable-content">
+                    <a href="#">Inicio</a>
+                    <a href="#"">Sobre el producto</a>
+                    <!-- <img class="imagen-barra-desplegable" src="./multimedia/iconos/JCP sin fondo.png" alt=""> -->
+                </div>
+            </div>
+        </section>
+        
+    </head>
+
+    <main>
+
+        <section class="presentacion-Pagina">
+            <img class="imagen-presentacion movimientoSuave" src="./multimedia/Producto/producto (3).png" alt="Audifonos">
+            <article class="tex-presentacion">
+                <h1>Escucha la Libertad: Audífonos Inalámbricos Minimalistas para una Experiencia Auditiva Sin Límites</h1>
+                Calidad Impecable, Precio Irresistible y larga duración: Audífonos Inalámbricos Minimalistas que Revolucionarán tu Experiencia Musical
+            </article>
+        </section>
+
+        <section class="contenidouno">
+            <h1 class="title-ContenidoUno">Información del producto:</h1>
+            <div  class="caracteristicas-producto">
+                <article>
+                    Características:	Básico, Baja Latencia, A prueba de sudor  <br>
+                    Color:	Negro <br>
+                    Tipo de Estampado:	Liso<br>
+                    Tipo:	En oreja<br>
+                    Material:	plástico<br>
+                    Fuente de alimentación:	A Pilas (pilas incluidas)<br>
+                </article>
+                <img class="animacionParpadeo" src="./multimedia/Producto/producto (4).png" alt="Imagen del producto">
+            </div>
+
+        </section>
+    </main>
+</body>
+<script>
+const desplegable = document.querySelector('.desplegable');
+const desplegableContent = document.querySelector('.desplegable-content');
+
+desplegable.addEventListener('click', function() {
+  desplegableContent.classList.toggle('active');
+});
+
+document.addEventListener('click', function(event) {
+  const targetElement = event.target;
+  if (!desplegable.contains(targetElement)) {
+    desplegableContent.classList.remove('active');
+  }
+
+});
+
+</script>
+</html>

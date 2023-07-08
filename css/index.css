@@ -1,0 +1,150 @@
+body{
+    background: rgb(0, 0, 0);
+}
+.barrasuperior{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* border: rgb(10, 245, 10) solid 1px; */
+}
+
+.LoGO{
+    width: 10%;
+}
+
+.desplegable{
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    padding-right: 10px;
+
+}
+
+.desplegable-btn, .imagen-barra-desplegable{
+    display: none;
+    color:rgb(10, 245, 10);
+    background: black;
+    border: none;
+}
+
+.desplegable-content{
+    width: 100%;
+
+}
+
+.desplegable-content a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.429);
+    margin-left: 05%;
+    text-align: center;
+
+}
+
+.desplegable-content a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* MAIN */
+
+/* presentacion de la pagina */
+
+.presentacion-Pagina{
+    background-color: rgba(53, 53, 53, 0.278);
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 10px rgb(4, 252, 4);
+
+}
+
+.imagen-presentacion{
+    width: 30%;
+    padding: 20px;
+
+}
+
+.tex-presentacion h1{
+    color: white;
+    font-size: 120%;
+    padding: 20px;
+}
+.tex-presentacion{
+    color: rgba(255, 255, 255, 0.655);
+    font-size: 100%;
+}
+
+.contenidouno{
+    color:aliceblue;
+    width: 100%;
+
+}
+
+/* .title-ContenidoUno{
+    box-shadow: 5px 5px 10px rgb(4, 252, 4);
+} */
+
+.caracteristicas-producto{
+    color: aliceblue;
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.caracteristicas-producto img{
+    width: 30%;
+}
+@media (max-width: 700px) { 
+    .desplegable{
+        position: relative;
+    }
+
+    .desplegable-btn{
+        display: block;
+        
+    }
+
+    .desplegable-content a{
+        display: flex;
+        flex-direction: row-reverse;
+        /* align-items: center; */
+        text-decoration: none;
+        margin-bottom: 5px; 
+        background: transparent;
+        padding: 10px;
+    }
+
+    .desplegable-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 100%;
+
+    }
+
+    .imagen-barra-desplegable{
+        display: block;
+        width: 30%;
+        position: absolute;
+        right: 10px;
+    }
+        
+    .desplegable-content.active {
+        display: block;
+        width: 100vh;
+        height: 100vh;
+        background-image: url(../multimedia/fondos/fondo-lineas-verdes.webp);
+        background-size:100vh;
+        background-repeat: no-repeat;
+
+    }
+}
