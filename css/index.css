@@ -1,5 +1,6 @@
 body{
     background-image: url(../multimedia/fondos/fondo-lineas-verdes.webp);
+    background-repeat: repeat;
 }
 .barrasuperior{
     background: rgb(0, 0, 0);
@@ -7,7 +8,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    /* border: rgb(10, 245, 10) solid 1px; */
 }
 
 .LoGO{
@@ -67,7 +67,7 @@ body{
 .imagen-presentacion{
     width: 20vh;
     padding: 20px;
-
+    filter: brightness(150%);
 }
 
 .tex-presentacion h1{
@@ -84,8 +84,6 @@ body{
     color:aliceblue;
     width: 100%;
     margin-top: 50px;
-
-
 }
 
 .title-ContenidoUno{
@@ -105,23 +103,73 @@ body{
 .caracteristicas-producto img{
     width: 30vh;
 }
-@media (max-width: 700px) { 
-    .desplegable{
+
+.especificacionesFlotantes{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.131);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.especificacionesFlotantes h3{
+    text-align: start;
+    padding-left: 20px;
+
+}
+
+.alinearespecificacionesFlotantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.alinearespecificacionesFlotantes article{
+    width: 70%;
+    margin: 10px;
+    padding-right: 10px;
+    font-size: 120%;
+}
+
+.alinearespecificacionesFlotantes img{
+    width: 30vh;
+    height: 50vh;
+}
+
+#especificacionesFlotantesdos h3{
+    margin-top: 07%;
+    text-align: end;
+    padding-right: 10%;
+}
+
+#alinearespecificacionesFlotantesdos {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+#alinearespecificacionesFlotantesdos img{
+    width: 30vh;
+    height: 50vh;
+}
+
+@media (max-width: 500px) {
+    
+    .desplegable {
         position: relative;
     }
 
     .desplegable-btn{
         display: block;
-        
     }
 
     .desplegable-content a{
         display: flex;
         flex-direction: row-reverse;
-        /* align-items: center; */
         text-decoration: none;
         margin-bottom: 5px; 
-        background: transparent;
+        background: black;
         padding: 10px;
     }
 
@@ -130,25 +178,96 @@ body{
         position: absolute;
         top: 0;
         right: 100%;
-
     }
 
-        
     .desplegable-content.active {
         display: block;
+        top: 0;
         width: 100vh;
         height: 100vh;
         background-image: url(../multimedia/fondos/fondo-lineas-verdes.webp);
         background-size:100vh;
         background-repeat: no-repeat;
+    }
+    
+    .presentacion-Pagina{
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
 
+    .imagen-presentacion{
+        width: 24vh;
+        height: 24vh;
+        padding: 20px;
+    }
+
+    .tex-presentacion{
+        color: rgba(255, 255, 255, 0.655);
+        font-size: 100%;
     }
 
     .caracteristicas-producto{
-        font-size: 96%;
+        flex-direction: column-reverse;
+        font-size: 90%;
+        color: rgba(255, 255, 255, 0.655);
     }
 
     .caracteristicas-producto img{
         width: 20vh;
+        padding-bottom: 05vh;
+    }
+
+    .especificacionesFlotantes{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.437);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .especificacionesFlotantes h3{
+        text-align: center;
+        padding: 10px;
+    
+    }
+    
+    .alinearespecificacionesFlotantes{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .alinearespecificacionesFlotantes article{
+        width: 70%;
+        margin: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    
+    .alinearespecificacionesFlotantes img{
+        width: 16vh;
+        height: 35vh;
+    }
+
+
+        
+    #especificacionesFlotantesdos h3{
+        margin-top: 07%;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    #alinearespecificacionesFlotantesdos {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: end;
+    }
+
+    #alinearespecificacionesFlotantesdos img{
+        width: 20vh;
+        height: 30vh;
+        filter: brightness(90%);
     }
 }

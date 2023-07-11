@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/animaciones.css"">
+    <link rel="stylesheet" href="./css/animaciones.css">
+    <link rel="stylesheet" href="./css/efectoEntrada.css">
     <title>JCP</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
 
     <main>
 
-        <section class="presentacion-Pagina">
+        <section class="presentacion-Pagina ">
             <img class="imagen-presentacion movimientoSuave" src="./multimedia/Producto/producto (3).png" alt="Audifonos">
             <article class="tex-presentacion">
                 <h1>Escucha la Libertad: Audífonos Inalámbricos Minimalistas para una Experiencia Auditiva Sin Límites</h1>
@@ -34,18 +35,42 @@
             </article>
         </section>
 
-        <section class="contenidouno">
+        <section class="contenidouno efectoentrada">
             <!-- <h1 class="title-ContenidoUno">Información del producto:</h1> -->
             <div  class="caracteristicas-producto">
                 <article>
-                    Características:	Básico, Baja Latencia, A prueba de sudor  <br>
+                    Características:	Básico<br>
                     Color:	Negro <br>
                     Tipo de Estampado:	Liso<br>
                     Tipo:	En oreja<br>
                     Material:	plástico<br>
-                    Fuente de alimentación:	A Pilas (pilas incluidas)<br>
+                    Fuente de alimentación:	Baterias Internas<br>
                 </article>
                 <img class="animacionParpadeo" src="./multimedia/Producto/producto (4).png" alt="Imagen del producto">
+            </div>
+            
+
+            <div class="especificacionesFlotantes efectoentrada">
+                <h3>Audífonos de Baja Latencia</h3>
+                <div class="alinearespecificacionesFlotantes">
+                    <article>
+                        Experimenta un nuevo nivel de perfección sonora con nuestros impresionantes audífonos de baja latencia. Olvídate de los molestos retrasos y adéntrate en un mundo donde el sonido se sincroniza a la perfección con cada imagen y acción. Sumérgete en tus juegos favoritos, sumérgete en la música con una fidelidad asombrosa y déjate envolver por el cine como nunca antes. Con nuestros audífonos de baja latencia, cada nota, cada efecto y cada palabra cobrarán vida en perfecta armonía. ¡Descubre una experiencia auditiva sin igual y déjate llevar por la emoción!
+                    </article>
+                    <img class="movimientoSuave" src="./multimedia/Producto/producto (1).png" alt="Foto de audífonos de baja latencia">
+                </div>
+            </div>
+            
+
+            <div class="especificacionesFlotantes efectoentrada" id="especificacionesFlotantesdos">
+                <h3>Audífonos a prueba de sudor para tu vida activa</h3>
+                <div class="alinearespecificacionesFlotantes" id="alinearespecificacionesFlotantesdos">
+                    <article>
+                        Descubre la perfección sonora con nuestros audífonos a prueba de sudor. Diseñados especialmente para adaptarse a tu estilo de vida activo, estos audífonos son tu compañero ideal en cualquier situación sudorosa. Ya sea que estés corriendo, entrenando en el gimnasio o disfrutando de actividades al aire libre, nuestros audífonos a prueba de sudor te brindan una experiencia de audio excepcional sin preocupaciones. Olvídate de los problemas de daños por la humedad y sumérgete en tu música favorita con total libertad. Con un diseño resistente y duradero, nuestros audífonos te ofrecen un sonido claro y envolvente sin importar cuánto te esfuerces. ¡Disfruta de una experiencia de audio sin límites mientras te mantienes activo y fresco!
+                    </article>
+                    <img class="movimientoSuave" src="./multimedia/Producto/A prueba de agua.png" alt="Foto de audífonos de baja latencia">
+                </div>
+            </div>
+        
             </div>
 
         </section>
@@ -68,4 +93,5 @@ document.addEventListener('click', function(event) {
 });
 
 </script>
+<script src="./Js/efectoEntrada.js"></script>
 </html>
